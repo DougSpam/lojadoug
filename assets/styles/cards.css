@@ -4,8 +4,7 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    border: solid 2px black;
-    margin-top: 6%;
+    margin-top: 6%
 }
 
 .card {
