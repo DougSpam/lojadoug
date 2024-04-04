@@ -52,6 +52,7 @@
 }
 
 .comprar-card:hover {
+    transition: 0.5s;
     background: rgb(0 , 125, 255);
     color: #f6f6f6;
 }
