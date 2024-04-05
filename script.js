@@ -1,43 +1,46 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".comprar-card");
 
     buttons.forEach(button => {
         button.addEventListener("click", function() {
             const card = this.closest(".card, .card2, .card3");
-            const quantityInput = document.createElement("input");
-            quantityInput.type = "number";
-            quantityInput.placeholder = "Quantos Você Deseja?";
-            quantityInput.classList.add("quantity-input");
 
-            const confirmButton = document.createElement("button");
-            confirmButton.textContent = "Confirmar";
-            confirmButton.classList.add("confirm-button");
+            // Verificar se o input e o botão de confirmação já existem
+            if (!card.querySelector(".quantity-input") && !card.querySelector(".confirm-button")) {
+                const quantityInput = document.createElement("input");
+                quantityInput.type = "number";
+                quantityInput.placeholder = "Quantos você quer?";
+                quantityInput.classList.add("quantity-input");
 
-            const precoCard = card.querySelector(".preco-card");
-            const precoOriginal = parseFloat(precoCard.textContent.replace('R$', '').replace(',', '.'));
+                const confirmButton = document.createElement("button");
+                confirmButton.textContent = "Confirmar";
+                confirmButton.classList.add("confirm-button");
 
-            card.appendChild(quantityInput);
-            card.appendChild(confirmButton);
+                const precoCard = card.querySelector(".preco-card");
+                const precoOriginal = parseFloat(precoCard.textContent.replace('R$', '').replace(',', '.'));
 
-            confirmButton.addEventListener("click", function() {
-                const quantity = parseInt(quantityInput.value);
-                const total = (quantity * precoOriginal).toFixed(2);
+                card.appendChild(quantityInput);
+                card.appendChild(confirmButton);
 
-                precoCard.textContent = `${total}R$`;
+                confirmButton.addEventListener("click", function() {
+                    const quantity = parseInt(quantityInput.value);
+                    const total = (quantity * precoOriginal).toFixed(2);
 
-                const productName = card.querySelector(".tituto-card").textContent;
+                    const productName = card.querySelector(".tituto-card").textContent;
 
-                
-                const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
-                const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
-                window.open(whatsappLink, '_blank');
+                    // Redirecionar para o WhatsApp em uma nova guia com a quantidade, nome do produto e preço total
+                    const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
+                    const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappLink, '_blank');
 
-                
-                quantityInput.remove();
-                confirmButton.remove();
-            });
+                    // Remover o input de quantidade e o botão de confirmação
+                    quantityInput.remove();
+                    confirmButton.remove();
+                });
+            }
         });
     });
 });
-   
+
 
