@@ -58,3 +58,23 @@
     background: rgb(0 , 125, 255);
     color: #f6f6f6;
 }
+
+
+
+
+/* cards secundarios */
+
+.container2 {
+    gap: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%
+}
+.card2 {
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(80, 79, 79);
+    width: 200px;
+    border: none;
+    
+}
