@@ -69,9 +69,26 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    margin-top: 3%
+    margin-top: 6%
 }
 .card2 {
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(80, 79, 79);
+    width: 200px;
+    border: none;
+    
+}
+
+/* cards terciarios */
+
+.container3 {
+    gap: 20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%
+}
+.card3 {
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgb(80, 79, 79);
     width: 200px;
