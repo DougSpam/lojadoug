@@ -5,9 +5,18 @@
 }
 
 body {
-    background: #e4dddd;  
-    height: 100vh; 
+    background-color: #000000;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #515151 5%, #e4dddd 40%, #515151 60%, #e4dddd 100%);
+    background-size: 200%, 200%;
+    animation: float 6s linear infinite alternate;
 }
+
+@keyframes float {
+    from{background-position: 0 0 ;}
+    to{background-position: 100% 100%;}
+}
+
 
 header {
     display: flex;
