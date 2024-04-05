@@ -7,7 +7,7 @@
                 const card = this.closest(".card, .card2, .card3");
                 const quantityInput = document.createElement("input");
                 quantityInput.type = "number";
-                quantityInput.placeholder = "Quantidade";
+                quantityInput.placeholder = "Quantos Você Deseja?";
                 quantityInput.classList.add("quantity-input");
 
                 const confirmButton = document.createElement("button");
@@ -28,12 +28,12 @@
 
                     const productName = card.querySelector(".tituto-card").textContent;
 
-                    // Redirecionar para o WhatsApp com a quantidade, nome do produto e preço total
+                    
                     const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
                     const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
                     window.open(whatsappLink, '_blank');
 
-                    // Remover o input de quantidade e o botão de confirmação
+                    
                     quantityInput.remove();
                     confirmButton.remove();
                 });
