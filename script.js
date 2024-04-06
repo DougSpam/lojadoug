@@ -29,12 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     const productName = card.querySelector(".tituto-card").textContent;
 
-                    // Redirecionar para o WhatsApp em uma nova guia com a quantidade, nome do produto e preço total
                     const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
                     const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
                     window.open(whatsappLink, '_blank');
 
-                    // Remover o input de quantidade e o botão de confirmação
+                    
                     quantityInput.remove();
                     confirmButton.remove();
                 });
