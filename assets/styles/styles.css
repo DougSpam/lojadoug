@@ -1,7 +1,17 @@
+:root{
+    --font-brains: "JetBrains Mono";
+    --font-titulos: "Montagna"
+    --font-sub-titulos: "Better Together Regular";
+    --font-sub-titulos2: "TT Polls Script Trial";
+    --cor-rosa-decorativa: #FFC6D9;
+    --cor-marrom-principal: #522312
+    --cor-rosa-principal: #F62F87
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: "JetBrains Mono", sans-serif;
+    font-family: var(--font-sub-titulos2)
 }
 
 body {
