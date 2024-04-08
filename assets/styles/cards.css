@@ -28,18 +28,23 @@
 }
 
 .tituto-card {
+    color: #F62F87;
+    font-family: 'Dancing Script';
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .ingredientes-card {
+    font-family: 'Montserrat', sans-serif;
+    color: #522312;
+    font-size: 12px;
     text-align: center;
-    color: #fff;
     font-weight: bold;
 }
 
 .preco-card {
+    color: #522312;
     font-size: 18px;
     text-align: center;
     font-weight: bold;
@@ -47,10 +52,10 @@
 
 .comprar-card {
     cursor: pointer;
-    color: #181717;
+    color: #F62F87;
     font-weight: bold;
     border-radius: 4px;
-    background: #f6f6f6;
+    background: transparent;
     padding: 5px;
     border: none;
     width: 80%;
@@ -59,8 +64,7 @@
 
 .comprar-card:hover {
     transition: 0.5s;
-    background: rgb(0 , 125, 255);
-    color: #f6f6f6;
+    color: #FFC6D9;
 }
 
 

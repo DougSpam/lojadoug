@@ -1,25 +1,22 @@
 :root{
-    --font-brains: "JetBrains Mono";
-    --font-titulos: "Montagna"
-    --font-sub-titulos: "Better Together Regular";
-    --font-sub-titulos2: "TT Polls Script Trial";
     --cor-rosa-decorativa: #FFC6D9;
-    --cor-marrom-principal: #522312
-    --cor-rosa-principal: #F62F87
+    --cor-marrom-principal: #522312;
+    --cor-rosa-principal: #F62F87;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--font-sub-titulos2) , var(--font-brains);
+    font-family: Montserrat;
 }
 
 body {
-    background-color: #000000;
+    background-image: url("/assets/img/imgfundo.jpg");
+    /* background-color: #000000;
     height: 100%;
     background-image: linear-gradient(to bottom left, #515151 5%, #e4dddd 20%, #515151 60%, #e4dddd 100%);
     background-size: 200%, 200%;
-    animation: float 6s linear infinite alternate;
+    animation: float 6s linear infinite alternate; */
 }
 
 @keyframes float {
@@ -47,7 +44,9 @@ nav {
 }
 
 nav > a {
-    color: #181717;
+    font-family: 'Dancing Script';
+    font-size: 27px;
+    color: #522312;
     text-decoration: none;
 }
 
