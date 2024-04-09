@@ -60,7 +60,7 @@
     }
 
     nav > a:hover {
-        transition: 0.5s;
+        transform: scale(1.1);
         background: rgba(246,47,135,40%);;
         color: #000;
     }

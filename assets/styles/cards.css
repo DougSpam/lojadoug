@@ -1,7 +1,7 @@
 @media (min-width: 1100px) {
 
     .container-principal {
-        gap: 20px;
+        gap: 25px;
         display: flex; 
         justify-content: center;
         align-items: center;
@@ -13,7 +13,7 @@
         padding-bottom: 20px;
         border-radius: 10px;
         box-shadow: 4px 4px 10px rgb(80, 79, 79);
-        width: 250px;
+        width: 270px;
         border: none;
     }
 
@@ -94,4 +94,34 @@
         font-weight: bold;
     }
 
+    .quantity-input {
+        all: initial;
+        width: 17vh;
+        border: none;
+        color: #F62F87;
+        outline: none; 
+        font-family: 'Dancing Script';
+        font-size: 20px;
+    }
+    
+    .quantity-input:active {
+        border: none;
+        outline: none;
+    }
+
+    .quantity-input::placeholder {
+        color: #F62F87;
+    }
+
+
+    .confirm-button {
+        height: 27px;
+        width: 10vh;
+        font-family: 'Dancing Script';
+        font-size: 20px;
+        border-radius: 12px;
+        border: none;
+        color: #F62F87;
+        background: #FFC6D9;
+    }
 }

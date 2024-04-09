@@ -65,7 +65,7 @@
     }
 
     .comprar-card:hover {
-        transition: 0.5s;
+        transform: scale(1.2);
         color: #FFC6D9;
     }
 
@@ -123,5 +123,36 @@
         text-align: center;
         font-size: 30px;
         font-weight: bold;
+    }
+
+    .quantity-input {
+        all: initial;
+        width: 18vh;
+        border: none;
+        color: #F62F87;
+        outline: none; 
+        font-family: 'Dancing Script';
+        font-size: 22px;
+    }
+    
+    .quantity-input:active {
+        border: none;
+        outline: none;
+    }
+
+    .quantity-input::placeholder {
+        color: #F62F87;
+    }
+
+
+    .confirm-button {
+        height: 27px;
+        width: 11vh;
+        font-family: 'Dancing Script';
+        font-size: 20px;
+        border-radius: 12px;
+        border: none;
+        color: #F62F87;
+        background: #FFC6D9;
     }
 }
