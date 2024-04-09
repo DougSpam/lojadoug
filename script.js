@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const buttons = document.querySelectorAll(".comprar-card");
 
@@ -25,21 +24,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 confirmButton.addEventListener("click", function() {
                     const quantity = parseInt(quantityInput.value);
-                    const total = (quantity * precoOriginal).toFixed(2);
 
-                    const productName = card.querySelector(".tituto-card").textContent;
+                    // Verificar se um número válido foi inserido
+                    if (!isNaN(quantity) && quantity > 0) {
+                        const total = (quantity * precoOriginal).toFixed(2);
 
-                    const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
-                    const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
-                    window.open(whatsappLink, '_blank');
+                        const productName = card.querySelector(".tituto-card").textContent;
 
-                    
-                    quantityInput.remove();
-                    confirmButton.remove();
+                        const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
+                        const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
+                        window.open(whatsappLink, '_blank');
+
+                        quantityInput.remove();
+                        confirmButton.remove();
+                    } else {
+                        quantityInput.placeholder = 'Digite algum numero!';
+                    }
                 });
             }
         });
     });
 });
-
-
