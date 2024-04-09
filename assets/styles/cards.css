@@ -80,6 +80,12 @@
         
     }
 
+    .img-salgados {
+        border-radius: 8px 8px 0 0;
+        width: 50%;
+        height: 50%;
+    }
+
     .indisponivel {
         color: #F62F87;
         font-family: 'Dancing Script';
