@@ -127,12 +127,12 @@
 
     .quantity-input {
         all: initial;
-        width: 18vh;
+        width: 20vh;
         border: none;
         color: #F62F87;
         outline: none; 
         font-family: 'Dancing Script';
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .quantity-input:active {
