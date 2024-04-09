@@ -116,4 +116,12 @@
         
     }
 
+
+    .indisponivel {
+        color: #F62F87;
+        font-family: 'Dancing Script';
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
 }
