@@ -11,7 +11,6 @@ body , html {
     padding: 0;
     overflow-x: hidden; /* Oculta o scroll horizontal */
     box-sizing: border-box;
-    transition: 500ms;
 }
 
 body {
