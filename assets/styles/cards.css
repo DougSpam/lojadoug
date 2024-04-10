@@ -53,6 +53,7 @@
     }
 
     .comprar-card {
+        transition: 500ms;
         cursor: pointer;
         color: #F62F87;
         font-weight: bold;
