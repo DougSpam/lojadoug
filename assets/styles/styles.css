@@ -11,6 +11,7 @@ body , html {
     padding: 0;
     overflow-x: hidden; /* Oculta o scroll horizontal */
     box-sizing: border-box;
+    transition: 500ms;
 }
 
 body {
@@ -50,6 +51,7 @@ nav {
     padding: 5px; 
     border-radius: 22px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0,0.3);
+
 }
 
 nav > a {
