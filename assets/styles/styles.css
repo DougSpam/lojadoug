@@ -50,7 +50,7 @@ nav {
     padding: 5px; 
     border-radius: 22px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0,0.3);
-
+    transition: 500ms;
 }
 
 nav > a {
