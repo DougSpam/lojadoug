@@ -103,6 +103,7 @@
     .quantity-input {
         all: initial;
         width: 17vh;
+        padding: 10px;
         border: none;
         color: #F62F87;
         outline: none; 

@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                             const productName = card.querySelector(".tituto-card").textContent;
 
-                            const message = `Olá, quero comprar ${quantity} ${productName} por ${total}R$.`;
+                            const message = `Olá, quero comprar ${quantity} ${productName} por R$${total}.`;
                             const whatsappLink = `https://wa.me/5511913322531?text=${encodeURIComponent(message)}`;
                             window.open(whatsappLink, '_blank');
 
