@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const addQuantityInput = () => {
                 if (!card.querySelector(".quantity-input") && !card.querySelector(".confirm-button")) {
                     const quantityInput = document.createElement("input");
-                    quantityInput.type = "number";
+                    quantityInput.type = "search";
                     quantityInput.placeholder = "Digite a quantidade";
                     quantityInput.classList.add("quantity-input");
 

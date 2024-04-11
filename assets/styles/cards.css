@@ -104,6 +104,7 @@
         all: initial;
         width: 17vh;
         padding: 10px;
+        padding-left: 3.8rem;
         border: none;
         color: #F62F87;
         outline: none; 
@@ -123,12 +124,12 @@
 
     .confirm-button {
         height: 27px;
-        width: 10vh;
+        width: 100%;
         font-family: 'Dancing Script';
         font-size: 20px;
         border-radius: 12px;
         border: none;
         color: #F62F87;
-        background: #FFC6D9;
+        background: rgba(255,198,217, 40%);;
     }
 }
